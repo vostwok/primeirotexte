@@ -1,0 +1,32 @@
+<nav class="menu-lateral menu-lateral--ativo">
+    <a href="#" class="menu-lateral__link menu-lateral__link--features">Features
+      <button class="menu__descricao" ariel-label="menu descrição" ><i></i></button>
+      <nav class="menu-features menu-ativo-features">
+        <a href="#" class="descricao--menu descricao--menu-todoList">Todo List</a>
+        <a href="#" class="descricao--menu descricao--menu-calendar">Calendar</a>
+        <a href="#" class="descricao--menu descricao--menu-reminders">Reminders</a>
+        <a href="#" class="descricao--menu descricao--menu-planning">Planning</a>
+      </nav>
+    </a>    
+    <a href="#" class="menu-lateral__link menu-lateral__link--company">Company
+      <nav class="menu-company menu-ativo-company">
+        <a href="#" class="descricao--menu">History</a>
+        <a href="#" class="descricao--menu">Our Team</a>
+        <a href="#" class="descricao--menu">Blog</a>
+      </nav>
+    </a>
+    <a href="#" class="menu-lateral__link menu-lateral__careers">Careers</a>
+    <a href="#" class="menu-lateral__link menu-lateral__about">About</a>
+  </nav>
+  <ul>
+    <li><a href="" id="menu-company-descriçao">History</a></li>
+    <li><a href="" id="menu-company-descriçao">Our Team</a></li>
+    <li><a href="" id="menu-company-descriçao">Blog</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="" id="menu-feature-descriçao">Todo List</a></li>
+    <li><a href="" id="menu-feature-descriçao">Calendar</a></li>
+    <li><a href="" id="menu-feature-descriçao">Reminders</a></li>
+    <li><a href="" id="menu-feature-descriçao">Planning</a></li>
+  </ul>
