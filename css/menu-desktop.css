@@ -1,0 +1,128 @@
+@media screen and (min-width: 600px) {
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+
+  #menu a {
+    display: flex;
+    padding: 0 0 0 0;
+    color: #8d8c8c;
+    margin-bottom: 7px;
+    margin-right: 70px;
+  }
+
+  .login {
+    color: #8d8c8c;
+  }
+
+  .registrar {
+    margin-left: 15px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    color: #8d8c8c;
+    padding: 8px;
+  }
+
+  #menu-features-descricao {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 120px;
+    top: 70px;
+    left: 130px;
+    background: #ffffff;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu1.active #menu-features-descricao {
+    height: calc(29vh - 70px);
+    visibility: visible;
+  }
+
+  #menu-company-descriçao {
+    display: block;
+    position: absolute;
+    width: 90px;
+    top: 70px;
+    background: #ffffff;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu2.active #menu-company-descriçao {
+    height: calc(23vh - 70px);
+    visibility: visible;
+  }
+
+  a.menu-company-descriçao {
+    width: 70px;
+    margin-left: 7px;
+    margin-top: 4px;
+  }
+
+  a.menu-features-descricao {
+    width: 100px;
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+
+  .menu-features-descricao {
+    margin-bottom: 60px;
+  }
+
+  .icones {
+    padding-right: 10px;
+    width: 15px;
+  }
+
+  #botton-features {
+    display: flex;
+  }
+
+  #botton-campany {
+    display: flex;
+  }
+
+  .dece1 {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 75px;
+    position: absolute;
+  }
+  
+  .dece2 {
+    display: flex;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-left: 80px;
+    margin-top: 5px;
+  }
+  
+  .container {
+    display: flex;
+    color: #8d8c8c;
+    margin-top: 10px;
+  }
+
+  #botao-mobile {
+    display: none;
+  }
+}

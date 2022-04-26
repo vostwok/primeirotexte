@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/menu-desktop.css">
+  <link rel="stylesheet" href="./css/menu-mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
@@ -18,28 +20,61 @@
 </head>
 <body>
   <header id="header" class="cabecalho">
-    <a href="#" id="logo">snap</a>
+    <a href="#" id="logo" aria-label="logo do site">snap</a>
     <nav id="nav">
       <button ariel-label="Abrir menu" id="botao-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span id="butonn"></span>
       </button>
       <ul id="menu" role="menu">
-        <li><a href="">Features</a>  <ul>
-          <li><a href="" id="menu-feature-descriçao">Todo List</a></li>
-          <li><a href="" id="menu-feature-descriçao">Calendar</a></li>
-          <li><a href="" id="menu-feature-descriçao">Reminders</a></li>
-          <li><a href="" id="menu-feature-descriçao">Planning</a></li>
-        </ul></li>
-        <li><a href="" id="menu-campany">Company</a>  <ul>
-          <li><a href="" id="menu-company-descriçao">History</a></li>
-          <li><a href="" id="menu-company-descriçao">Our Team</a></li>
-          <li><a href="" id="menu-company-descriçao">Blog</a></li>
-        </ul></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">About</a></li>
+        <li id="menu1">
+          <button aria-label="menu Features" id="botton-features" aria-haspopup="true" aria-controls="menu-features-descricao" aria-expanded="false"><a href="" id="menu-features" class="features">Features</a><img src="./images/icon-arrow-down.svg" alt="icone do arrow down" class="dece1"><span id="botao-features"></span></button>
+          <ul id="menu-features-descricao">
+            <li><a href="#" class="menu-features-descricao"><img src="./images/icon-todo.svg" alt="icone do todo" class="icones">Todo List</a></li>
+          <li><a href="#" class="menu-features-descricao"><img src="./images/icon-calendar.svg" alt="icone do calendar" class="icones">Calendar</a></li>
+          <li><a href="#" class="menu-features-descricao"><img src="./images/icon-reminders.svg" alt="icone do remiders" class="icones">Reminders</a></li>
+          <li><a href="#" class="menu-features-descricao"><img src="./images/icon-planning.svg" alt="icone do planning" class="icones">Planning</a></li>
+        </ul>
+      </li>
+      <li id="menu2">
+          <button aria-label="menu Campany" id="botton-campany" aria-haspopup="true" aria-controls="menu-company-descriçao" aria-expanded="false"><a href="" id="menu-campany">Company</a><img src="./images/icon-arrow-down.svg" alt="icone do arrow down" class="dece2"><span id="botao-campany"></span></button>
+          <ul id="menu-company-descriçao">
+          <li><a href="#" class="menu-company-descriçao">History</a></li>
+          <li><a href="#" class="menu-company-descriçao">Blog</a></li>
+          <li><a href="#" class="menu-company-descriçao">Our Team</a></li>
+        </ul>
+      </li>
+        <li><a href="#" class="careers">Careers</a></li>
+        <li><a href="#" class="about">About</a></li>
+      </ul>
+      <ul class="container">
+        <li><a href="#" class="login">login</a></li>
+        <li><a href="#" class="registrar">registrar</a></li>
       </ul>
     </nav>
   </header>
+  <main>
+    <img src="./images/image-hero-mobile.png" alt="imagem mobile" class="imagem-mobile">
+    <img src="./images/image-hero-desktop.png" alt="imagem desktop" class="imagem-desktop">
+    <h1 class="frase-desktop">Make<br> remote work</h1>
+    <h1 class="frase">Make remote work</h1>
+    <div class="principal">
+      <p>Get your team in sync. no matter your</p>
+      <p>location. Streamline processes. create</p>
+      <p>team rituais. and watch productivty soar.</p>
+    </div>
+    <div class="principal-desktop">
+      <p>Get your team in sync. no matter your
+        location. Streamline processes. create
+        team rituais. and watch productivty soar.</p>
+    </div>
+    <h2 class="more">Learn more</h2>
+    <div class="containe-rodape">
+      <img src="./images/client-databiz.svg" alt="imagem rodape databiz" class="databiz rodape">
+      <img src="./images/client-audiophile.svg" alt="imagem audio phile" class="audiophile rodape">
+      <img src="./images/client-meet.svg" alt="imagem rodape meet" class="meet rodape">
+      <img src="./images/client-maker.svg" alt="imagem rodape meker" class="maker rodape">
+    </div>
+  </main>
   
   <script src="index.js"></script>
 </body>

@@ -1,0 +1,167 @@
+@media (max-width: 600px) {
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+  }
+
+  #butonn {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+
+  #butonn::after, #butonn::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #butonn {
+    border-top: transparent;
+  }
+  
+  #nav.active #butonn::before {
+    transform: rotate(135deg);
+  }
+  
+  #nav.active #butonn::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 65%;
+    top: 70px;
+    right: 0px;
+    background: #ffffff;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  
+  #menu a {
+    padding: 13px;
+    margin: 0 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
+  #menu-features-descricao {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 160px;
+    background: #ffffff;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  
+  #menu1.active #menu-features-descricao {
+    height: calc(40vh - 70px);
+    visibility: visible;
+    margin-left: 20px;
+  }
+  
+  #menu-company-descriçao {
+    display: block;
+    position: relative;
+    width: 160px;
+    background: #ffffff;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  
+  #menu2.active #menu-company-descriçao {
+    height: calc(31vh - 70px);
+    visibility: visible;
+    margin-left: 20px;
+  }
+
+  a.menu-company-descriçao {
+    display: flex;
+    width: 70px;
+    margin-left: 7px;
+    margin-top: 4px;
+  }
+  
+  a.menu-features-descricao {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding: none;
+  }
+
+  a.about {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 25px;
+  }
+
+  a.careers {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 25px;
+  }
+
+  .icones {
+    width: 16px;
+  }
+
+  #botton-features {
+    display: flex;
+  }
+  
+  #botton-campany {
+    display: flex;
+  }
+  #botao-mobile {
+    display: flex;
+    padding: 5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .dece1 {
+    width: 16px;
+    margin-top: 14px;
+  }
+  
+  .dece2 {
+    width: 16px;
+    margin-top: 14px;
+  }
+  
+  .container {
+    display: none;
+  }
+
+}

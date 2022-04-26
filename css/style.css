@@ -1,104 +1,252 @@
-a {
-  color: black;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-a:hover {
- background: rgba(0, 0, 0, .5);
-}
+@media screen and (min-width: 600px) {
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  a:hover {
+  background: rgba(0, 0, 0, .5);
+  }
 
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+  #logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  #header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+  }
 
-#header {
-  box-sizing: border-box;
-  height: 70px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #e7e7e7e7;
-}
+  #nav {
+    padding: 1rem;
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 70px;
+    justify-content: space-between;
+    background: #ffffff;
+  }
 
-#menu {
-  display: flex;
-  list-style: none;
-  gap: .5rem;
-}
+  .imagem-mobile {
+    display: none;
+  }
 
-#menu a {
-  display: block;
-  padding: .5rem;
-}
+  main {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 40px);
+  }
 
-#botao-mobile {
-  display: none;
+  .frase {
+    visibility: hidden;
+  }
+
+  .frase-desktop {
+    font-size: 80px;
+    grid-column: 2 / 10;
+    grid-row: 2 / 3;
+    font-family: sans-serif;
+    width: 35vw;
+    margin-left: 70px;
+  }
+
+  .more {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 10;
+    grid-column: 2;
+    text-align: center;
+    width: 130px;
+    align-content: center;
+    margin-left: 70px;
+  }
+
+  .imagem-desktop {
+    grid-column: 11 / 20;
+    width: 36vw;
+    height: 83vh;
+  }
+
+  .principal {
+    visibility: hidden;
+  }
+
+  .principal-desktop {
+    display: grid;
+    padding-bottom: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    grid-column: 2 / 6;
+    grid-row: 7;
+    margin-left: 70px;
+  }
+
+  .containe-rodape {
+    grid-column: 2 / 8;
+    grid-row: 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 70px;
+  }
+
+  .databiz {
+    width: 100px;
+    grid-column: 2;
+    grid-row: 12;
+
+  }
+
+  .audiophile {
+    width: 70px;
+  }
+
+  .meet {
+    width: 80px;
+  }
+
+  .maker {
+    width: 100px;
+  }
 }
 
 @media (max-width: 600px) {
-  
-  #menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #e7e7e7e7;
-    transition: .6s;
-    z-index: 1000;
-    height: 0;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  
-  #nav.active #menu {
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
-  }
-  
-  #botao-mobile {
+  #header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 8px;
     display: flex;
-    padding: 5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
   }
 
-  #butonn {
-    border-top: 2px solid;
-    width: 20px;
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  a:hover {
+    background: rgba(0, 0, 0, .5);
   }
 
-  #butonn::after, #butonn::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    margin-top: 5px;
-    background: currentColor;
-    transition: 0.3s;
-    position: relative;
+  .principal {
+    visibility: visible;
   }
-  #nav.active #butonn {
-    border-top: transparent;
+
+  .principal-desktop {
+    visibility: hidden;
   }
   
-  #nav.active #butonn::before {
-    transform: rotate(135deg);
+  #logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frase-desktop {
+    visibility: hidden;
+  }
+
+  .frase {
+    visibility: visible;
+  }
+
+  .imagem-mobile {
+    display: flex;
+  }
+
+  .imagem-desktop {
+    display: none;
   }
   
-  #nav.active #butonn::after {
-    transform: rotate(-135deg);
-    top: -7px;
+  img {
+    width: 100vw;
+  }
+
+  .principal {
+    padding-bottom: 19px;
+  }
+  
+  p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  .frase {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+  }
+
+  h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  }
+
+  .more {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 30%;
+    background-color: black;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-bottom: 60px;
+  }
+
+  .containe-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .databiz {
+    width: 100px;
+    grid-column: 2;
+    grid-row: 12;
+  }
+  
+  .audiophile {
+    width: 60px;
+    grid-column: 3;
+    grid-row: 12;
+  }
+  
+  .meet {
+    width: 70px;
+    grid-column: 4;
+    grid-row: 12;
+  }
+  
+  .maker {
+    width: 70px;
   }
 }
 

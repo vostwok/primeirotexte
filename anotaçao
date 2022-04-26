@@ -30,3 +30,16 @@
     <li><a href="" id="menu-feature-descriçao">Reminders</a></li>
     <li><a href="" id="menu-feature-descriçao">Planning</a></li>
   </ul>
+
+  #header {
+    display: flex;
+    width: 100vw;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(2, 20px);
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+  }
