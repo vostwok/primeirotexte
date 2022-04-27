@@ -23,6 +23,8 @@ function toggleMenuFeatures(event) {
   menu1.classList.toggle('active')
   const active = menu1.classList.contains('active');
   event.currenTarget.setAttribute('aria-expanded', active);
+  if (active) {
+  }
 }
 
 function toggleMenuCampany(event) {
