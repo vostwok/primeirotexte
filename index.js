@@ -4,17 +4,17 @@ const botaoCampany = document.getElementById('botton-campany');
 
 const botaoFeatures = document.getElementById('botton-features');
 
+function onclik() {
+  if (onclik)
+  menu1.classList.add('menuAtivo')
+}
+
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const nav = document.getElementById('nav');
   nav.classList.toggle('active')
   const active = nav.classList.contains('active');
-  event.currenTarget.setAttribute('aria-expanded', active);
-  if (active) {
-    event.currenTarget.setAttribute('aria-label', 'Fechar Menu');
-  } else {
-    event.currenTarget.setAttribute('aria-label', 'Abrir Menu')
-  }
+  event.currenTarget.add('aria-expanded', active);
 }
 
 function toggleMenuFeatures(event) {
@@ -22,7 +22,7 @@ function toggleMenuFeatures(event) {
   const menu1 = document.getElementById('menu1');
   menu1.classList.toggle('active')
   const active = menu1.classList.contains('active');
-  event.currenTarget.setAttribute('aria-expanded', active);
+  event.currenTarget.add('aria-expanded', active);
   if (active) {
   }
 }
