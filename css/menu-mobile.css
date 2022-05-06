@@ -74,9 +74,9 @@
   }
   
   #menu1.active #menu-features-descricao {
-    height: 185px;
+    height: 18.5rem;
     visibility: visible;
-    margin-left: 20px;
+    margin-left: 2rem;
   }
   
   #menu-company-descriçao {
@@ -93,7 +93,7 @@
   }
   
   #menu2.active #menu-company-descriçao {
-    height: 134px;
+    height: 11.3rem;
     visibility: visible;
     margin-left: 20px;
   }

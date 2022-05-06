@@ -4,35 +4,43 @@ const botaoCampany = document.getElementById('botton-campany');
 
 const botaoFeatures = document.getElementById('botton-features');
 
-function onclik() {
-  if (onclik)
-  menu1.classList.add('menuAtivo')
-}
-
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const nav = document.getElementById('nav');
+  const menu1 = document.getElementById('menu1');
+  const menu2 = document.getElementById('menu2');
   nav.classList.toggle('active')
-  const active = nav.classList.contains('active');
-  event.currenTarget.add('aria-expanded', active);
+  if (nav.classList.contains('active')) {
+    
+  } else {
+    menu1.classList.remove('active')
+    menu2.classList.remove('active')
+  }
 }
 
 function toggleMenuFeatures(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const menu1 = document.getElementById('menu1');
+  const menu2 = document.getElementById('menu2');
   menu1.classList.toggle('active')
-  const active = menu1.classList.contains('active');
-  event.currenTarget.add('aria-expanded', active);
-  if (active) {
+  document.body.classList.toggle('menu-feature-ativo')
+  if (document.body.classList.contains('menu-feature-ativo')) {
+    document.body.classList.remove('menu-campany-ativo')
+    menu2.classList.remove('active')
   }
+
 }
 
 function toggleMenuCampany(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const menu2 = document.getElementById('menu2');
+  const menu1 = document.getElementById('menu1');
   menu2.classList.toggle('active')
-  const active = menu2.classList.contains('active');
-  event.currenTarget.setAttribute('aria-expanded', active);
+  document.body.classList.toggle('menu-campany-ativo')
+  if (document.body.classList.contains('menu-campany-ativo')) {
+    document.body.classList.remove('menu-feature-ativo')
+    menu1.classList.remove('active')
+}
 }
 
 botaoMobile.addEventListener('click', toggleMenu);

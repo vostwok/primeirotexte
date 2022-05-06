@@ -1,10 +1,10 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) { 
   #menu {
     display: flex;
     list-style: none;
     gap: .5rem;
     flex-direction: row;
-    margin-left: 40px;
+    margin-left: 4rem;
   }
 
   #menu a {
@@ -44,14 +44,20 @@
     visibility: hidden;
     overflow-y: hidden;
   }
+  
 
   #menu1.active #menu-features-descricao {
     height: 11.2rem;
     visibility: visible;
   }
 
+  #menu1.fechar #menu-features-descricao {
+    visibility: hidden;
+  }
+
   #menu-company-descriçao {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     width: 9rem;
     top: 5.5rem;
@@ -68,6 +74,10 @@
   #menu2.active #menu-company-descriçao {
     height: 7rem;
     visibility: visible;
+  }
+
+  #menu2.fechar #menu-company-descriçao {
+    visibility: hidden;
   }
 
   a.menu-company-descriçao {
